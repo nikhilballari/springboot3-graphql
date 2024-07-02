@@ -1,0 +1,24 @@
+server:
+  port: 9111
+
+spring:
+  application:
+    name: springboot-crud
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+      url: jdbc:mysql://localhost:3306/springbootcrud
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    port: 6379
+
+logging:
+  level:
+    com:
+      dailypractise:
+        demo: DEBUG
